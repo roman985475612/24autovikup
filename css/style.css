@@ -1,0 +1,238 @@
+
+.menu {
+    border-bottom: #008ed6 3px solid;
+    background-color: #000;
+    opacity: 0.7; 
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-logo { 
+    margin-right: auto; 
+    color: white;
+}
+
+.menu-phone { 
+    margin-left: auto; 
+    color: white;
+}
+
+.menu a {
+    font-family: Montserrat, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: 20px;
+}
+
+.menu .menu-item a {
+    color: grey;
+}
+
+.menu .menu-item a:hover {
+    color: white;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-around;
+    align-content: center;
+}
+
+.home {
+  background: url("/img/home.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed; 
+  min-height: 550px;
+  display: flex;
+}
+
+.home-inner {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+}
+
+.home-row {
+    display: grid;
+    grid-template-columns: 3fr 1.5fr;
+    grid-gap: 10px;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: white;
+    width: 100%;
+}
+
+.home strong {
+    font-weight: bold;
+}
+
+.home-row li {
+    padding-top: 15px;
+}
+
+.home-row li i {
+    padding-right: 10px;
+}
+
+.call-back {
+    background-color: #0668D1;
+    padding: 15px;
+    border-radius: 5px;
+    color: var(--secondary);
+    text-align: center;
+}
+
+.call-back__text { margin-bottom: 1rem; }
+
+.form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 100%;
+}
+
+.form__control {
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+    width: 100%;
+    color: var(--dark);
+    background-color: var(--secondary);
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.form__btn {
+    border: 1px solid var(--secondary);
+    color: var(--secondary);
+    background-color: var(--primary); 
+}
+
+.form__btn:hover {
+    cursor: pointer;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    background-color: var(--secondary);
+}
+
+.section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section-advantage{
+    text-align: center;
+}
+
+.section-advantage section{
+    padding: 20px;
+}
+
+.section-auto {
+    background: url("/img/auto.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    min-height: 400px;
+    max-height: 500px;
+    position: relative;
+}
+
+.section-auto-inner {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.section-auto-inner .container {
+    margin: auto;
+}
+
+.section-auto p {
+    font-family: Montserrat, sans-serif;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.section-plan {
+    text-align: center;
+}
+
+.section-plan section {
+    padding: 20px;
+}
+
+.section-plan h2 { 
+    margin-bottom: 15px;
+    text-align: center; 
+}
+
+.section-plan h3 { 
+    text-transform: uppercase;
+}
+
+.section-contact {
+    background-color: var(--primary);
+    color: white;
+    text-align: center;
+}
+
+.section-contact .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+}
+
+.section-contact h2 { 
+    padding-bottom: 30px; 
+}
+
+.section-contact ul {
+    list-style-type: none;
+}
+
+.section-contact i { padding-right: 10px; }
+
+.site-footer {
+    background-color: var(--dark);
+    color: var(--light);
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 1200px){
+}
+
+@media screen and (max-width: 992px){
+    .row {   
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .home-row {
+        padding-left: 10px;
+        padding-right: 10px;
+        grid-template-columns: 1fr;
+    }
+
+    .menu-item { display: none; }
+
+}
+
+@media screen and (max-width: 768px){
+    .row {   
+        grid-template-columns: 1fr;
+    }
+}
