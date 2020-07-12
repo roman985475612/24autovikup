@@ -1,0 +1,92 @@
+
+.home {
+  background-image: url("/img/car-header-2-lg.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  background-attachment: fixed; 
+  min-height: 800px;
+  display: flex;
+}
+
+.home-inner {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+.home-row {
+    display: grid;
+    grid-template-columns: 3fr 1.5fr;
+    grid-gap: 10px;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: white;
+    width: 100%;
+}
+
+.home strong {
+    font-weight: bold;
+}
+
+.home-row li {
+    padding-top: 16px;
+}
+
+.call-back {
+    background-color: var(--primary);
+    padding: 15px;
+    border-radius: 5px;
+    color: var(--secondary);
+    text-align: center;
+}
+
+.call-back__text { margin-bottom: 1rem; }
+
+.form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 100%;
+}
+
+.form__control {
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+    width: 100%;
+    color: var(--dark);
+    background-color: var(--secondary);
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.form__btn {
+    border: 1px solid var(--secondary);
+    color: var(--secondary);
+    background-color: var(--primary); 
+}
+
+.form__btn:hover {
+    cursor: pointer;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    background-color: var(--secondary);
+}
+
+@media screen and (max-width: 992px){
+    .home-row {
+        padding-left: 10px;
+        padding-right: 10px;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .home h1 {
+        padding-top: 1rem;
+    }
+}

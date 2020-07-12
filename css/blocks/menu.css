@@ -1,0 +1,35 @@
+
+.menu {
+    border-bottom: #008ed6 3px solid;
+    background-color: #000;
+    opacity: 0.7; 
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__item--logo,
+.menu__item--link,
+.menu__item--phone {
+    font-family: Montserrat, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: 20px;
+    color: var(--secondary);
+}
+
+.menu__item--logo,
+.menu__item--phone,
+.menu__item--link:hover {
+    color: var(--light);
+}
+
+.menu__item--logo { 
+    margin-right: auto;
+}
+
+.menu__item--phone { 
+    margin-left: auto;
+}
