@@ -1,7 +1,7 @@
-@import url('/css/fonts.css');
-@import url('/css/core.css');
-@import url('/css/blocks/menu.css');
-@import url('/css/blocks/header.css');
+@import url('fonts.css');
+@import url('core.css');
+@import url('blocks/menu.css');
+@import url('blocks/header.css');
 
 .row {
     display: grid;
@@ -21,6 +21,11 @@
 
 .section-advantage section{
     padding: 20px;
+}
+
+.section-advantage h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
 .section-auto {
@@ -67,11 +72,18 @@
 .section-plan h2 { 
     margin-bottom: 15px;
     text-align: center; 
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
-.section-plan h3 { 
+.section-plan h3 {
     text-transform: uppercase;
 }
+
+.section-plan p {
+    text-align: left;
+}
+
 
 .section-contact {
     background-color: var(--primary);
@@ -89,6 +101,8 @@
 
 .section-contact h2 { 
     padding-bottom: 20px; 
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
 .section-contact ul {
@@ -125,9 +139,6 @@
         padding-right: 10px;
         grid-template-columns: 1fr;
     }
-
-    .menu__item--link { display: none; }
-
 }
 
 @media screen and (max-width: 768px){
@@ -142,25 +153,4 @@
     .section__auto--banner {
         font-size: 1.5rem;
     }
-    
-    .menu {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .menu__item--logo { 
-        margin-right: 0;
-        padding-bottom: 5px;
-    }
-
-    .menu__item--phone {
-        margin-left: 0;
-        padding-top: 5px;
-    }
-
-    .menu__item--logo,
-    .menu__item--phone { 
-        font-size: 1.2rem;
-    }
-    
 }

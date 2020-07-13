@@ -1,22 +1,27 @@
 
 .menu {
-    border-bottom: #008ed6 3px solid;
-    background-color: #000;
+    border-bottom: var(--primary) 3px solid;
+    background-color: var(--dark);
+    padding: 16px;
     opacity: 0.7; 
     position: fixed;
     width: 100%;
-    display: flex;
+}
+
+.menu .container {
+    display: grid;
+    grid-template-columns: 2fr auto auto auto auto 2fr;
+    grid-column-gap: 16px;
     justify-content: space-between;
 }
 
 .menu__item--logo,
 .menu__item--link,
 .menu__item--phone {
-    font-family: Montserrat, sans-serif;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
     text-decoration: none;
-    text-transform: uppercase;
     display: block;
-    padding: 20px;
     color: var(--secondary);
 }
 
@@ -26,10 +31,23 @@
     color: var(--light);
 }
 
-.menu__item--logo { 
-    margin-right: auto;
+.menu__item--phone {
+    justify-self: end;
 }
 
-.menu__item--phone { 
-    margin-left: auto;
+@media all and (max-width: 1000px) {
+    .menu .container {
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+    }
+    .menu__item--link {
+        display: none;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .menu .container {
+        grid-template-columns: auto;
+        justify-content: center;
+    }
 }
